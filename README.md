@@ -29,7 +29,7 @@ An AutoIT script to login and to multiple GW2 accounts, managed in [GW2Launcher]
 
 An executable is also available at [build/gw2-cycler.exe](build/gw2-cycler.exe). Set this up as per the image below.
 
-   ![](web-content/image-accountconfigexe.png)
+   ![](web-content/image-launchconfigexe.png)
 
 ## Notes
 
