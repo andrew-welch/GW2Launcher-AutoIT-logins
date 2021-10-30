@@ -8,7 +8,15 @@ $loadtime = 11000 ; Time to wait for the game window to load in after the charac
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 #include <AutoItConstants.au3>
+#include <Misc.au3>
 Opt("WinTitleMatchMode", 2)
+
+; Check if CTRL is being held - if so then exit
+if (_IsPressed("11")) Then
+
+   Exit (2)
+
+EndIf
 
 ; Get title substring from input
 if $cmdline[0] > 0 Then
