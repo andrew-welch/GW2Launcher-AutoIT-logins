@@ -11,26 +11,26 @@ An AutoIT script to login and to multiple GW2 accounts, managed in [GW2Launcher]
 
 ## Usage
 
-1. Download the [scripts/gw2-cycler.au3](scripts/gw2-cycler.au3) file to your local computer
-2. In each account, add the option through **Launch Options > Run after launching > Add program**
+1. Download the [scripts/gw2-cycler.au3](scripts/gw2-cycler.au3) file to your local computer.
+2. In each account, add the option through **Launch Options > Run after launching > Add program**.
 
 ![](web-content/image-accountconfig.png)
 
 3. Add the following settings:
    - The program to run: Your AutoIT executable path (e.g. C:\Program Files (x86)\AutoIt3\AutoIt3.exe)
-   - Options command line arguments: "(*Path to the file*)\gw2-cycler.au3" "%accountname%"
+   - Optional command line arguments: "(*Path to the file*)\gw2-cycler.au3" "%accountname%"
    - Run after...: "Loading the game"
 
 ![](web-content/image-launchconfig.png)
 
-4. Click the account in GW2 Launcher to open the account
+4. Click the account in GW2 Launcher to open the account.
 
 
 ## Notes
 
-If you have a slower computer you many need to add additional time for the game to load. this can be edited in the loadtime variable.
+If you have a slower computer you many need to add additional time for the game to load. This can be edited in the loadtime variable.
 
-When you want to open your account normally (e.g. to sell or transfer materials) then move or rename script or disable it in GW2Launcher.
+When you want to open your account normally (e.g. to sell or transfer materials), move or rename script or disable it in GW2Launcher.
 
 
 
