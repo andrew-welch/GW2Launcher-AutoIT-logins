@@ -8,6 +8,9 @@ An AutoIT script to login and to multiple GW2 accounts, managed in [GW2Launcher]
 
 1. Install and set up [GW2Launcher](https://github.com/Healix/Gw2Launcher) for your accounts to the point that they can run when launched.
 2. Install [AutoIT](https://www.autoitscript.com/site/) on your PC.
+3. Add the %accountname% variable to the window caption, as per below from the settings menu.
+
+![](web-content/image-appconfig.png)
 
 ## Usage
 
@@ -23,7 +26,7 @@ An AutoIT script to login and to multiple GW2 accounts, managed in [GW2Launcher]
 
    ![](web-content/image-launchconfig.png)
 
-4. Click the account in GW2 Launcher to open the account.
+4. Click the account in GW2 Launcher to open the account. You can also shift-select multiple accounts and open them together - they will individually be triggered to continue and close. If using this it's recommended to delay launches by 15 seconds between each launch (Settings > Launching > Delay)
 
 ## Executable
 
