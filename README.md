@@ -25,6 +25,9 @@ An AutoIT script to login and to multiple GW2 accounts, managed in [GW2Launcher]
 
 4. Click the account in GW2 Launcher to open the account.
 
+## Executable
+
+An executable is also available at [build/gw2-cycler.exe].
 
 ## Notes
 
