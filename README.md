@@ -38,7 +38,7 @@ An executable is also available at [build/gw2-cycler.exe](build/gw2-cycler.exe).
 
 If you have a slower computer you many need to add additional time for the game to load. This can be edited in the loadtime variable.
 
-When you want to open your account normally (e.g. to sell or transfer materials), move or rename script or disable it in GW2Launcher.
+When you want to open your account normally (e.g. to sell or transfer materials), hold CTRL when launching after the credentials have been copied into the splash screen. 
 
 
 
