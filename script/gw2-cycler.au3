@@ -41,8 +41,9 @@ EndIf
 
 ; Activate window and enter character, wait the loadtime duration
 WinActivate($target,"")
+Sleep (Random (1000,2200))
 Send("{Enter}")
-Sleep($loadtime)
+Sleep($loadtime + Random (1000,3000))
 
 ; Close the window
 WinClose($target)
