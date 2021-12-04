@@ -4,7 +4,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Editable Variables
-$loadtime = 11000 ; Time to wait for the game window to load in after the character screen in milliseconds
+$loadtime = 13000 ; Time to wait for the game window to load in after the character screen in milliseconds
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 #include <AutoItConstants.au3>
@@ -29,8 +29,10 @@ Else
 
 EndIf
 
-; After launch, wait for window and press enter
+; Wait for window
 $target  = WinWait("[TITLE:" & $titletarget & "; CLASS:ArenaNet_Dx_Window_Class]","",5)
+
+Sleep(Random (2000,3000))
 
 if $target = 0 Then
 
@@ -39,11 +41,16 @@ if $target = 0 Then
 
 EndIf
 
+
+SendKeepActive($target)
 ; Activate window and enter character, wait the loadtime duration
-WinActivate($target,"")
-Sleep (Random (1000,2200))
+
 Send("{Enter}")
-Sleep($loadtime + Random (1000,3000))
+
+SendKeepActive("")
+
+; Wait a random amount of time
+Sleep($loadtime + Random (1,3000))
 
 ; Close the window
 WinClose($target)
