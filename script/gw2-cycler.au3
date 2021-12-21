@@ -52,6 +52,13 @@ SendKeepActive("")
 ; Wait a random amount of time
 Sleep($loadtime + Random (1,3000))
 
+; Check if CTRL is being held - if so then exit
+if (_IsPressed("11")) Then
+
+   Exit (2)
+
+EndIf
+
 ; Close the window
 WinClose($target)
 Exit (0)
