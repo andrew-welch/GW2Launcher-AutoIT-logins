@@ -9,14 +9,13 @@ $loadtime = 13000 ; Time to wait for the game window to load in after the charac
 
 #include <AutoItConstants.au3>
 #include <Misc.au3>
+#include <WinAPISys.au3>
+#include <WinAPIvkeysConstants.au3>
+
 Opt("WinTitleMatchMode", 2)
 
 ; Check if CTRL is being held - if so then exit
-if (_IsPressed("11")) Then
-
-   Exit (2)
-
-EndIf
+KeyCheck("14")
 
 ; Get title substring from input
 if $cmdline[0] > 0 Then
@@ -52,13 +51,25 @@ SendKeepActive("")
 ; Wait a random amount of time
 Sleep($loadtime + Random (1,3000))
 
-; Check if CTRL is being held - if so then exit
-if (_IsPressed("11")) Then
+
+; Check if CAPSLOCK is enabled - if so then exit
+if (_WinAPI_GetKeyState($VK_CAPITAL)) Then
 
    Exit (2)
 
-EndIf
+EndIf 
+
+; Check if CTRL is being held - if so then exit
+KeyCheck("14")
 
 ; Close the window
 WinClose($target)
 Exit (0)
+
+Func KeyCheck($key)
+   if (_IsPressed("$key")) Then
+
+      Exit (2)
+
+   EndIf
+EndFunc
